@@ -40,9 +40,13 @@ bool AreTypicalMatrices(int Matrix1[3][3], int Matrix2[3][3], short Rows, short 
 	{
 		for (short j = 0; j < Cols; j++)
 		{
-			return (Matrix1[i][j] == Matrix2[i][j]);
+			if (Matrix1[i][j] != Matrix2[i][j])
+			{
+				return false;
+			}
 		}
 	}
+	return true;
 }
 
 int main()
