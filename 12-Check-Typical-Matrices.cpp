@@ -62,9 +62,9 @@ int main()
 
 
 	if (AreTypicalMatrices(Matrix1, Matrix2, 3, 3))
-		cout << "\nYES: both martices are equal.";
+		cout << "\nYES: both martices are typical.";
 	else
-		cout << "\nNo: martices are NOT equal.";
+		cout << "\nNo: both martices are NOT typical.";
 	system("pause>0");
 
 }
