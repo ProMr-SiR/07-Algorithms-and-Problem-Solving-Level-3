@@ -1,8 +1,9 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
 using namespace std;
+
+const string ClientsFileName = "Clients.txt";
 
 struct sClient
 {
@@ -67,7 +68,7 @@ void AddNewClient()
 {
 	sClient Client;
 	Client = ReadNewClient();
-	AddingDataToTheFile("ClientsFileName.txt", ConvertRecordtoLine(Client));
+	AddingDataToTheFile(ClientsFileName, ConvertRecordtoLine(Client));
 }
 
 void AddClients()
