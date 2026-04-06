@@ -16,8 +16,7 @@ struct sClient
 sClient ReadNewClient()
 {
 	sClient Client;
-
-	cout << "Adding New Client: \n\n";
+	
 	// Usage of std::ws will extract allthe whitespace character
 	cout << "Enter Acount Number? ";
 	getline(cin >> ws, Client.AcountNumber);
@@ -73,18 +72,16 @@ void AddNewClient()
 
 void AddClients()
 {
-	sClient Client;
-	char PlayAgain = 'Y';
-
+	char AddMore = 'Y';
 	do
 	{
 		system("cls");
 		cout << "Adding New Client:\n\n";
 
 		AddNewClient();
-		cout << endl << "Client Added Successfully, Do you want to add more clients Y/N? ";
-		cin >> PlayAgain;
-	} while (PlayAgain == 'Y' || PlayAgain == 'y');
+		cout << "\nClient Added Successfully, do you want to add more clients ? Y / N ? ";
+		cin >> AddMore;
+	} while (toupper(AddMore) == 'Y');
 }
 
 int main()
