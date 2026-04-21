@@ -37,3 +37,7 @@ The main focus was tackling **51 progressively challenging algorithmic problems*
 After completing this level, I progressed to **08 - Algorithms & Problem Solving Level 4**, which introduced even more advanced problem sets and concepts.
 
 ---
+## 📬 Connect
+If you’d like to check my other projects or connect:
+- **GitHub:** [ProMr-SiR](https://github.com/ProMr-SiR)
+---
